@@ -65,11 +65,11 @@
     ]
   },
   "scripts": {
-    "build": "./bin/run build",
-    "lint": "./bin/run lint",
+    "build": "node ./bin/run build",
+    "lint": "node ./bin/run lint",
     "readme": "oclif-dev readme",
     "postpack": "rimraf oclif.manifest.json",
-    "prepack": "./bin/run build && oclif-dev manifest"
+    "prepack": "node ./bin/run build && oclif-dev manifest"
   },
   "types": "dist/index.d.ts"
 }

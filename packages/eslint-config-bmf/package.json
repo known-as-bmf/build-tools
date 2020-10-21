@@ -2,7 +2,6 @@
   "name": "@known-as-bmf/eslint-config-bmf",
   "version": "1.0.0",
   "author": "Julien Avert",
-  "private": true,
   "scripts": {
     "build": ""
   },

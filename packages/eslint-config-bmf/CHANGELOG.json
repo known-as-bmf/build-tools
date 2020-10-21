@@ -2,6 +2,18 @@
   "name": "@known-as-bmf/eslint-config-bmf",
   "entries": [
     {
+      "version": "1.0.1",
+      "tag": "@known-as-bmf/eslint-config-bmf_v1.0.1",
+      "date": "Wed, 21 Oct 2020 18:34:13 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "fix dependencies"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.0.0",
       "tag": "@known-as-bmf/eslint-config-bmf_v1.0.0",
       "date": "Wed, 21 Oct 2020 16:36:09 GMT",

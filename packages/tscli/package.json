@@ -1,10 +1,25 @@
 {
   "name": "@known-as-bmf/tscli",
-  "description": "Typescript build & test CLI",
   "version": "0.1.0",
+  "description": "Typescript build & test CLI",
   "author": "Julien Avert",
+  "license": "MIT",
   "bin": {
     "tscli": "./bin/run"
+  },
+  "files": [
+    "/bin",
+    "/dist",
+    "/oclif.manifest.json"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "node ./bin/run build",
+    "lint": "node ./bin/run lint",
+    "readme": "oclif-dev readme",
+    "postpack": "rimraf oclif.manifest.json",
+    "prepack": "node ./bin/run build && oclif-dev manifest"
   },
   "dependencies": {
     "@babel/core": "7.12.3",
@@ -50,13 +65,6 @@
     "ts-node": "9.0.0",
     "typescript": "4.0.3"
   },
-  "files": [
-    "/bin",
-    "/dist",
-    "/oclif.manifest.json"
-  ],
-  "license": "MIT",
-  "main": "dist/index.js",
   "oclif": {
     "commands": "./dist/commands",
     "bin": "tscli",
@@ -64,12 +72,7 @@
       "@oclif/plugin-help"
     ]
   },
-  "scripts": {
-    "build": "node ./bin/run build",
-    "lint": "node ./bin/run lint",
-    "readme": "oclif-dev readme",
-    "postpack": "rimraf oclif.manifest.json",
-    "prepack": "node ./bin/run build && oclif-dev manifest"
-  },
-  "types": "dist/index.d.ts"
+  "publishConfig": {
+    "access": "public"
+  }
 }

@@ -2,6 +2,18 @@
   "name": "@known-as-bmf/tscli",
   "entries": [
     {
+      "version": "0.1.2",
+      "tag": "@known-as-bmf/tscli_v0.1.2",
+      "date": "Thu, 22 Oct 2020 18:10:34 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "change external handling"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.1.1",
       "tag": "@known-as-bmf/tscli_v0.1.1",
       "date": "Wed, 21 Oct 2020 18:34:13 GMT",

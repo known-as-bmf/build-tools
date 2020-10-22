@@ -39,7 +39,11 @@ const createBaseRollupConfig = (
   return [
     {
       input,
-      external,
+      external: (moduleId) =>
+        external.some(
+          // ignore the module if it is an exact match or a sub-folder
+          (ext) => moduleId === ext || moduleId.startsWith(`${ext}/`)
+        ),
       plugins: [
         del({ targets: [outputDir], runOnce: true }),
         json(),

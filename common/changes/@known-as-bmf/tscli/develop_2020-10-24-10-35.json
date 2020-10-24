@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "@known-as-bmf/tscli",
+      "comment": "add support for node 10.x",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@known-as-bmf/tscli",
+  "email": "bmf.geekinside@gmail.com"
+}

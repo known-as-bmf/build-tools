@@ -1,7 +1,6 @@
 import { flags } from '@oclif/command';
 import {
   InputOptions,
-  OutputAsset,
   OutputChunk,
   OutputOptions,
   rollup,
@@ -108,11 +107,7 @@ export default class BuildCommand extends TscliCommand {
 
     const reports = await Promise.all(
       outputs
-        // equivalent to `.flatMap((o) => o.output)` not supported in node 10.x
-        .reduce<(OutputChunk | OutputAsset)[]>(
-          (accu, o) => accu.concat(o.output),
-          []
-        )
+        .flatMap((o) => o.output)
         .filter((o): o is OutputChunk => o.type === 'chunk')
         .map(async (o) => {
           return {

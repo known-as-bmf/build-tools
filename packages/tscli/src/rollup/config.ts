@@ -79,7 +79,7 @@ const createBaseRollupConfig = (
       ],
       treeshake: { propertyReadSideEffects: true },
     },
-    build.format.flatMap((format) => {
+    build.format.map((format) => {
       const { minify, ...userOutput } = format;
 
       const output: OutputOptions = {
@@ -91,23 +91,20 @@ const createBaseRollupConfig = (
       };
 
       if (minify) {
-        return [
-          {
-            ...output,
-            // entryFileNames: `${project.meta.name}.${format}.js`,
-            plugins: [
-              terser({
-                format: { comments: false },
-                compress: {
-                  keep_infinity: true,
-                  pure_getters: true,
-                  passes: 10,
-                },
-                ecma: 5,
-              }),
-            ],
-          },
-        ];
+        return {
+          ...output,
+          plugins: [
+            terser({
+              format: { comments: false },
+              compress: {
+                keep_infinity: true,
+                pure_getters: true,
+                passes: 10,
+              },
+              ecma: 5,
+            }),
+          ],
+        };
       }
 
       return output;

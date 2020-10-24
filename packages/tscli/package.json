@@ -19,7 +19,7 @@
     "lint": "node ./bin/run lint",
     "readme": "oclif-dev readme",
     "postpublish": "rimraf oclif.manifest.json",
-    "prepublish": "node ./bin/run build && oclif-dev manifest"
+    "prepublishOnly": "node ./bin/run build && oclif-dev manifest"
   },
   "dependencies": {
     "@babel/core": "7.12.3",

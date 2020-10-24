@@ -18,8 +18,8 @@
     "build": "node ./bin/run build",
     "lint": "node ./bin/run lint",
     "readme": "oclif-dev readme",
-    "postpack": "rimraf oclif.manifest.json",
-    "prepack": "node ./bin/run build && oclif-dev manifest"
+    "postpublish": "rimraf oclif.manifest.json",
+    "prepublish": "node ./bin/run build && oclif-dev manifest"
   },
   "dependencies": {
     "@babel/core": "7.12.3",

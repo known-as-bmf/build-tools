@@ -2,6 +2,23 @@
   "name": "@known-as-bmf/tscli",
   "entries": [
     {
+      "version": "0.1.4",
+      "tag": "@known-as-bmf/tscli_v0.1.4",
+      "date": "Mon, 26 Oct 2020 19:13:29 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "bump deps & drop node 10.x support"
+          }
+        ],
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@known-as-bmf/eslint-config-bmf\" to `1.0.2`"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.1.3",
       "tag": "@known-as-bmf/tscli_v0.1.3",
       "date": "Sat, 24 Oct 2020 10:35:57 GMT",

@@ -2,6 +2,21 @@
   "name": "@known-as-bmf/eslint-config-bmf",
   "entries": [
     {
+      "version": "1.0.2",
+      "tag": "@known-as-bmf/eslint-config-bmf_v1.0.2",
+      "date": "Mon, 26 Oct 2020 19:13:29 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "stricter eslint peer dep"
+          },
+          {
+            "comment": "bump deps"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.0.1",
       "tag": "@known-as-bmf/eslint-config-bmf_v1.0.1",
       "date": "Wed, 21 Oct 2020 18:34:13 GMT",

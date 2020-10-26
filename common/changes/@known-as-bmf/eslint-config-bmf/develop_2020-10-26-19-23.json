@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "@known-as-bmf/eslint-config-bmf",
+      "comment": "fix eslint semver range",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@known-as-bmf/eslint-config-bmf",
+  "email": "bmf.geekinside@gmail.com"
+}

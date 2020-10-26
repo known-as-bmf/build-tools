@@ -1,6 +1,13 @@
 # Change Log - @known-as-bmf/tscli
 
-This log was last generated on Sat, 24 Oct 2020 10:35:57 GMT and should not be manually modified.
+This log was last generated on Mon, 26 Oct 2020 19:13:29 GMT and should not be manually modified.
+
+## 0.1.4
+Mon, 26 Oct 2020 19:13:29 GMT
+
+### Patches
+
+- bump deps & drop node 10.x support
 
 ## 0.1.3
 Sat, 24 Oct 2020 10:35:57 GMT

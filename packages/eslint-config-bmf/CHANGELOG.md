@@ -1,6 +1,13 @@
 # Change Log - @known-as-bmf/eslint-config-bmf
 
-This log was last generated on Mon, 26 Oct 2020 19:13:29 GMT and should not be manually modified.
+This log was last generated on Mon, 26 Oct 2020 19:23:33 GMT and should not be manually modified.
+
+## 1.0.3
+Mon, 26 Oct 2020 19:23:33 GMT
+
+### Patches
+
+- fix eslint semver range
 
 ## 1.0.2
 Mon, 26 Oct 2020 19:13:29 GMT

@@ -2,6 +2,18 @@
   "name": "@known-as-bmf/tscli",
   "entries": [
     {
+      "version": "0.1.5",
+      "tag": "@known-as-bmf/tscli_v0.1.5",
+      "date": "Mon, 26 Oct 2020 19:23:33 GMT",
+      "comments": {
+        "dependency": [
+          {
+            "comment": "Updating dependency \"@known-as-bmf/eslint-config-bmf\" to `1.0.3`"
+          }
+        ]
+      }
+    },
+    {
       "version": "0.1.4",
       "tag": "@known-as-bmf/tscli_v0.1.4",
       "date": "Mon, 26 Oct 2020 19:13:29 GMT",

@@ -1,12 +1,12 @@
-tscli
+@known-as-bmf/tscli
 =====
 
 Typescript build &amp; test CLI
 
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/tscli.svg)](https://npmjs.org/package/tscli)
-[![Downloads/week](https://img.shields.io/npm/dw/tscli.svg)](https://npmjs.org/package/tscli)
-[![License](https://img.shields.io/npm/l/tscli.svg)](https://github.com///blob/master/package.json)
+[![Version](https://img.shields.io/npm/v/@known-as-bmf/tscli.svg)](https://npmjs.org/package/@known-as-bmf/tscli)
+[![Downloads/week](https://img.shields.io/npm/dw/@known-as-bmf/tscli.svg)](https://npmjs.org/package/@known-as-bmf/tscli)
+[![License](https://img.shields.io/npm/l/@known-as-bmf/tscli.svg)](https://github.com///blob/master/package.json)
 
 <!-- toc -->
 * [Usage](#usage)

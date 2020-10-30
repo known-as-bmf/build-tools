@@ -6,11 +6,11 @@
     "build": ""
   },
   "peerDependencies": {
-    "eslint": ">=7.0.0 <=7.11.0",
+    "eslint": ">=7.0.0",
     "typescript": ">=3.0.0"
   },
   "dependencies": {
-    "@rushstack/eslint-config": "2.2.2",
+    "@rushstack/eslint-config": "2.3.0",
     "@typescript-eslint/eslint-plugin": "4.6.0",
     "@typescript-eslint/experimental-utils": "4.6.0",
     "@typescript-eslint/parser": "4.6.0",
@@ -18,7 +18,7 @@
     "eslint-plugin-react-hooks": "4.2.0"
   },
   "devDependencies": {
-    "eslint": "7.11.0",
+    "eslint": "7.12.1",
     "typescript": "4.0.5"
   },
   "publishConfig": {

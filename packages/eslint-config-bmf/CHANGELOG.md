@@ -1,6 +1,13 @@
 # Change Log - @known-as-bmf/eslint-config-bmf
 
-This log was last generated on Mon, 26 Oct 2020 19:23:33 GMT and should not be manually modified.
+This log was last generated on Fri, 30 Oct 2020 10:39:06 GMT and should not be manually modified.
+
+## 1.0.4
+Fri, 30 Oct 2020 10:39:06 GMT
+
+### Patches
+
+- bump deps
 
 ## 1.0.3
 Mon, 26 Oct 2020 19:23:33 GMT

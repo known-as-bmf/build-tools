@@ -4,7 +4,6 @@ import {
   enums,
   object,
   string,
-  StructType,
   union,
   func,
   type,
@@ -14,26 +13,25 @@ import {
   record,
   any,
   defaulted,
-  coerce,
+  create,
+  Infer,
 } from 'superstruct';
 
 import { identity } from './utils/function';
 
 // eslint-disable-next-line @rushstack/typedef-var
 const outputKind = enums(['cjs', 'es']);
-export type OutputKind = StructType<typeof outputKind>;
+export type OutputKind = Infer<typeof outputKind>;
 
 // eslint-disable-next-line @rushstack/typedef-var
 const outputDefinition = intersection([
   type({ format: outputKind }),
   record(string(), any()),
 ]);
-export type OutputDefinition = StructType<typeof outputDefinition>;
+export type OutputDefinition = Infer<typeof outputDefinition>;
 
 // eslint-disable-next-line @rushstack/typedef-var
-const format = dynamic<
-  StructType<typeof outputKind> | StructType<typeof outputDefinition>
->(
+const format = dynamic<OutputKind | OutputDefinition>(
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   (value, ctx): Struct<any> => {
     if (typeof value === 'string') {
@@ -83,8 +81,8 @@ const TscliConfigurationStruct = defaulted(
   {}
 );
 
-export type BuildConfiguration = StructType<typeof BuildConfigurationStruct>;
-export type TscliConfiguration = StructType<typeof TscliConfigurationStruct>;
+export type BuildConfiguration = Infer<typeof BuildConfigurationStruct>;
+export type TscliConfiguration = Infer<typeof TscliConfigurationStruct>;
 
 export function checkBuildConfiguration(
   input: unknown
@@ -94,5 +92,5 @@ export function checkBuildConfiguration(
 }
 
 export function coerceTscliConfiguration(input: unknown): TscliConfiguration {
-  return coerce(input, TscliConfigurationStruct);
+  return create(input, TscliConfigurationStruct);
 }

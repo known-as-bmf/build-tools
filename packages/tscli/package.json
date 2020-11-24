@@ -22,7 +22,7 @@
     "prepublishOnly": "node ./bin/run build && oclif-dev manifest"
   },
   "dependencies": {
-    "@babel/core": "7.12.7",
+    "@babel/core": "7.12.8",
     "@oclif/command": "1.8.0",
     "@oclif/config": "1.17.0",
     "@oclif/errors": "1.3.4",
@@ -48,7 +48,7 @@
     "rollup-plugin-delete": "2.0.0",
     "rollup-plugin-sourcemaps": "0.6.3",
     "rollup-plugin-terser": "7.0.2",
-    "superstruct": "0.11.1",
+    "superstruct": "0.12.0",
     "ts-jest": "26.4.4",
     "tslib": "2.0.3",
     "validate-npm-package-name": "3.0.0"

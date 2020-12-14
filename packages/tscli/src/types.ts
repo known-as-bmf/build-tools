@@ -33,13 +33,12 @@ export type OutputDefinition = Infer<typeof outputDefinition>;
 // eslint-disable-next-line @rushstack/typedef-var
 const format = dynamic<OutputKind | OutputDefinition>(
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  (value, ctx): Struct<any> => {
+  (value): Struct<any> => {
     if (typeof value === 'string') {
       return outputKind;
     } else if (typeof value === 'object' && !Array.isArray(value)) {
       return outputDefinition;
     } else {
-      ctx.fail();
       return union([outputKind, outputDefinition]);
     }
   }

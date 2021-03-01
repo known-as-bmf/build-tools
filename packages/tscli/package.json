@@ -1,6 +1,6 @@
 {
   "name": "@known-as-bmf/tscli",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Typescript build & test CLI",
   "author": "Julien Avert",
   "license": "MIT",

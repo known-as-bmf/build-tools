@@ -2,6 +2,18 @@
   "name": "@known-as-bmf/eslint-config-bmf",
   "entries": [
     {
+      "version": "1.0.7",
+      "tag": "@known-as-bmf/eslint-config-bmf_v1.0.7",
+      "date": "Mon, 01 Mar 2021 13:08:35 GMT",
+      "comments": {
+        "patch": [
+          {
+            "comment": "bump deps"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.0.6",
       "tag": "@known-as-bmf/eslint-config-bmf_v1.0.6",
       "date": "Thu, 21 Jan 2021 10:08:32 GMT",

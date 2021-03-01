@@ -1,6 +1,13 @@
 # Change Log - @known-as-bmf/tscli
 
-This log was last generated on Thu, 21 Jan 2021 10:08:32 GMT and should not be manually modified.
+This log was last generated on Mon, 01 Mar 2021 13:08:35 GMT and should not be manually modified.
+
+## 0.1.9
+Mon, 01 Mar 2021 13:08:35 GMT
+
+### Patches
+
+- bump deps
 
 ## 0.1.8
 Thu, 21 Jan 2021 10:08:32 GMT
